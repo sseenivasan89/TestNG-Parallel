@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2"  parallel="classes" thread-count="2">
+	<listeners>
+		<listener
+			class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter" />
+		<!--  <listener
+			class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter" /> 
+		<listener
+			class-name="com.aventstack.extentreports.testng.listener.ExtentIReporterSuiteClassListenerAdapter" /> -->
+		 <!-- <listener
+			class-name="com.aventstack.extentreports.testng.listener.ExtentIReporterSuiteListenerAdapter" />  -->
+	</listeners>
+	<test thread-count="2" name="Test">
+		<classes>
+			<class name="TestClasses.GoogleTest" />
+			<class name="TestClasses.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
